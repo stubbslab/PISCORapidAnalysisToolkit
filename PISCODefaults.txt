@@ -1,0 +1,68 @@
+#The default parameters for various PISCO processing command
+bias_list:BIAS.list
+full_flat_list:FLAT.list
+list_suffix:.list
+master_bias_root:BIAS
+master_flat_root:FLAT
+pisco_base_dir:/Users/sashabrownsberger/Documents/Harvard/physics/stubbs/PISCO/
+pisco_cal_dir:calData/
+crop_prefix:c_
+overscan_prefix:os_
+normalization_prefix:norm_
+bias_correction_prefix:bs_
+flat_correction_prefix:ff_
+overscan_buffer:6
+overscan_fit_order:2
+overscan_sections_1x1:[ [1546, 1578], [1546, 1578], [1546, 1578], [1546, 1578],[1546, 1578], [1546, 1578], [1546, 1578], [1546, 1578]  ]
+flat_single_amp_measure_sections_1x1:[ [ [200, 1400], [700, 4980] ], [ [200, 1400], [700, 4800] ], [ [200, 1400], [1000, 5200] ], [ [200, 1400], [1000, 5200] ], [ [200, 1400], [1300, 5500] ], [ [200, 1400], [1300, 5500] ], [ [200, 1400], [1000, 5200] ], [ [200, 1400], [1000, 5200] ] ]
+flat_stitched_measure_sections_1x1:[ [ [200, 3000], [900, 4900] ], [ [200, 3000], [1000, 5200] ], [ [200, 3000], [1300, 5500] ], [ [200, 3000], [1000, 5200] ] ]
+binning:1
+bias_combine_x_partitions:2
+bias_combine_y_partitions:2
+n_mosaic_extensions:8
+binning_1x1_cut:1546
+filters:[g,r,i,z]
+single_band_suffix_prefix:_
+single_band_suffix_suffix:.fits
+n_combined_header_keyword:NSTACK
+amp_juncture:1525
+crop_1x1:[[[200, 3000], [624, 5112]], [[150, 3000], [778, 5266]], [[150, 3000], [504, 4992]], [[150, 3000], [684, 5172]]]
+pixel_thresholds:[35000, 35000, 15000, 12000]
+amp_correct_col_range1x1:[2, 4480]
+gain_fit_col_range_keyword:GFITRANG
+amp_fit_keyword:GPOLYFIT
+flat_good_adu_levels:[[1500, 11000], [8000, 30000], [5000, 11500], [1500, 9000]]
+pixel_scale:0.1
+gains:[1.88, 1.74, 1.88, 1.86, 1.84, 1.76, 1.82, 1.81]
+bias_sub_keyword:BIASCORR
+flat_norm_keyword:FLATCORR
+exp_time_keyword:EXPTIME
+date_obs_keyword:DATEOBS
+exp_start_keyword:UT-OPEN
+exp_end_keyword:UT-CLOSE
+amp_keyword:AMP_LORR
+crop_keyword:CROPPED
+mcat_keyword_band_suffix:_
+good_object_keyword_prefix:good
+rough_ra_keyword:TELRA
+rough_dec_keyword:TELDC
+star_gal_keyword_prefix:CLASS_STAR
+obj_peak_flux_keyword_prefix:FLUX_MAX
+star_position_keyword_prefix:xy
+left_right_suffix:[left, right]
+image_extension:.fits
+catalogue_extension:.cat
+catalogue_header_identifier:#
+xypos_test_suffix:.xytxt
+xypos_fits_suffix:.xyls
+filter_header_keyword:FILTER
+normalization_sect_keyword:NORMSECT
+amp_gain_cor_bin_width:10
+amp_gain_cor_fit_sig_clip:3
+amp_gain_correction_fit_order:0
+amp_gain_correct_count_threshold:10000
+gain_correct_prefix:gc_
+astrometry_solver_low_scale:0.01
+astrometry_solver_high_scale:0.2
+astrometry_scale_units:"arcsecperpix"
+wcs_prefix:wcs_
